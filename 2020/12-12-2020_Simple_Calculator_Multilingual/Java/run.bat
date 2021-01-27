@@ -1,0 +1,1 @@
+java -jar simpleCalcJavaNetBeans8.2.jar 

@@ -1,0 +1,56 @@
+<html>
+	<body>	
+		<p>This is a simple calculator written in html and javascript made by Calvin Perry<p>		
+		<p>Enter the first number<p>		
+			<input type = "text" id = "firstNumber">			
+		<p>Enter the second number<p>		
+			<input type = "text" id = "secondNumber">			
+		<p>
+			<input type = "button" value = "+" onclick = "addition()"> 
+			<input type = "button" value = "-" onclick = "subtraction()"> 
+			<input type = "button" value = "x" onclick = "multiplication()"> 
+			<input type = "button" value = "/" onclick = "division()">
+		<p>
+		<p id = "displayAnswer"></p>
+		<p id = "displayAnswerAdd"></p>
+		<script>
+			function addition()
+			{
+				var firstNumber = parseFloat(document.getElementById("firstNumber").value);
+				var secondNumber = parseFloat(document.getElementById("secondNumber").value);
+				var answerAddition = firstNumber + secondNumber;
+				document.getElementById("displayAnswer").innerHTML = "The sum of " + firstNumber + " and " + secondNumber + " is: " + answerAddition;
+			}
+			function subtraction()
+			{
+				var firstNumber = parseFloat(document.getElementById("firstNumber").value);
+				var secondNumber = parseFloat(document.getElementById("secondNumber").value);
+				var answerSubtraction = firstNumber - secondNumber;
+				document.getElementById("displayAnswer").innerHTML = "The difference between " + firstNumber + " and " + secondNumber + " is: " + answerSubtraction;
+			}
+			function multiplication()
+			{
+				var firstNumber = parseFloat(document.getElementById("firstNumber").value);
+				var secondNumber = parseFloat(document.getElementById("secondNumber").value);
+				var answerMultiplication = firstNumber * secondNumber;
+				document.getElementById("displayAnswer").innerHTML = "The product of " + firstNumber + " and " + secondNumber + " is: " + answerMultiplication;
+			}
+			function division()
+			{
+				var firstNumber = parseFloat(document.getElementById("firstNumber").value);
+				var secondNumber = parseFloat(document.getElementById("secondNumber").value);
+				var answerDivision = firstNumber / secondNumber;
+				document.getElementById("displayAnswer").innerHTML = "The dividend of " + firstNumber + " and " + secondNumber + " is: " + answerDivision;
+			}
+		</script>
+	</body>	
+</html>
+
+<!-- References APA 7th Edition -->
+
+
+<!-- Sharma, S. (2018, October 13). Addition of two Number in JavaScript [Video]. YouTube. https://www.youtube.com/watch?v=UTxamUo9arw -->
+
+<!-- TeachUcomp. (2016, August 23). Add a line break in HTML - Tutorial - TeachUcomp, Inc. TeachUcomp, Inc. https://www.teachucomp.com/add-a-line-break-in-html-tutorial/ -->
+
+<!-- W3schools. (n.d.). HTML comments. W3Schools Online Web Tutorials. https://www.w3schools.com/html/html_comments.asp -->
